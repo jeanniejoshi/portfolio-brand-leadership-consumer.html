@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeannie Joshi — Consumer Brand Leadership: Beauty + CPG</title>
+<title>Jeannie Joshi | Consumer Brand Leadership: Beauty + CPG</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* WGSN Elemental: Orchid Ice · Canyon Rose · Atlantic Deep · Niagara */
+  /* WGSN Elemental — solid equivalents of translucent Venn values */
   --ink:#2A4A45; --mid:#3E6F68; --sub:#4F84A6; --accent:#B5706A; --accent2:#B5706A;
-  --tint:#F0EAED; --tint2:#E6DDE1; --rule:#D0C0CC; --white:#FFFFFF;
-  --warm:#F0EAED; --warm-border:#D0C0CC; --warm-accent:#B5706A;
-  --phase1:#F0EAED; --phase2:#E6DDE1; --phase3:#D0C0CC;
+  --tint:#F7F4F5; --tint2:#F0EAED; --rule:#E8E0E5; --white:#FFFFFF;
+  --warm:#FBF7F6; --warm-border:#E8E0E5; --warm-accent:#B5706A;
+  --phase1:#FBF3F2; --phase2:#F8FAFA; --phase3:#F3F7FA;
+  --rose-t:#FBF3F2; --ice-t:#F7F4F5; --blue-t:#F3F7FA;
   --serif:'Playfair Display',Georgia,serif; --sans:'Outfit',system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -19,7 +20,7 @@ body{font-family:var(--sans);color:var(--ink);background:var(--white);line-heigh
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* NAV */
-.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);padding:0 2rem;overflow-x:auto;white-space:nowrap}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);padding:0 2rem;overflow-x:auto;white-space:nowrap}
 .nav-in{max-width:860px;margin:0 auto;display:flex;align-items:stretch}
 .nav a{display:inline-block;padding:.75rem 1rem;font-size:.72rem;font-weight:500;letter-spacing:.06em;color:var(--sub);text-decoration:none;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .nav a:hover,.nav a:focus{color:var(--accent);border-bottom-color:var(--accent)}
@@ -27,19 +28,19 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 /* LAYOUT */
 .pg{max-width:860px;margin:0 auto;padding:0 2rem}
 .sec{padding:3rem 0}.sec+.sec{border-top:1px solid var(--rule)}
-.sec-warm{background:var(--warm)}.sec-tint{background:var(--tint)}
+.sec-warm{background:#FDF8F7}.sec-tint{background:#F7F4F5}
 .ey{display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
 .ey-bar{width:24px;height:2px;background:var(--accent)}
 .ey span{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.sdesc{font-size:.82rem;color:var(--sub);margin-bottom:1.5rem;max-width:620px;line-height:1.8}
+.sdesc{font-size:.82rem;color:var(--sub);margin-bottom:1.5rem;line-height:1.8}
 
 /* HEADER */
 .hdr{padding:3rem 0 0}
 .hdr h1{font-family:var(--serif);font-size:1.8rem;margin-bottom:.5rem}
 .tl{font-size:.78rem;color:var(--sub);margin-bottom:.2rem;letter-spacing:.03em;line-height:1.5}
 .tl:last-of-type{margin-bottom:2rem;font-size:.72rem}
-.premise{font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin-bottom:1.5rem;max-width:640px;line-height:1.7}
-.intro p{font-size:.88rem;color:var(--mid);line-height:1.9;margin-bottom:1.25rem;max-width:720px}
+.premise{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:1.5rem;line-height:1.7}
+.intro p{font-size:.88rem;color:var(--mid);line-height:1.9;margin-bottom:1.25rem}
 
 /* METRICS */
 .met{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--rule);margin:2rem 0}
@@ -49,15 +50,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .m-d{font-size:.65rem;color:var(--sub);line-height:1.4}
 
 /* CONTEXT BOXES */
-.ctx{background:var(--tint);border-left:3px solid var(--accent);padding:1.25rem 1.5rem;margin:2rem 0}
+.ctx{background:var(--rose-t);border-left:3px solid #DDBDBA;padding:1.25rem 1.5rem;margin:2rem 0}
 .ctx p{font-size:.82rem;color:var(--mid);line-height:1.8;margin:0}
 .ctx .cite{font-style:normal;font-size:.7rem;margin-top:.5rem;color:var(--sub)}
-.ctx-warm{background:var(--warm);border-left-color:var(--warm-border)}
+.ctx-warm{background:var(--ice-t);border-left-color:#E8E0E5}
 
 /* COLLAPSIBLE CARDS — Nielsen */
 .cd{border:1px solid var(--rule);margin-bottom:1.25rem;border-radius:2px}
 .cd-h{padding:1rem 1.25rem .75rem;cursor:pointer;position:relative;display:flex;flex-direction:column;gap:.15rem}
-.cd-h:hover{background:var(--tint)}
+.cd-h:hover{background:var(--rose-t)}
 .cd-h:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .cd-chevron{position:absolute;right:1.25rem;top:1.1rem;width:16px;height:16px;transition:transform .2s}
 .cd-chevron svg{width:16px;height:16px;fill:none;stroke:var(--sub);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -70,12 +71,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .cd[aria-expanded="true"] .cd-b{display:block}
 .cd-txt{font-size:.82rem;color:var(--mid);line-height:1.85;margin-bottom:1rem}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem}
-.tag{font-size:.65rem;color:var(--accent);font-weight:500;padding:.3rem .7rem;background:var(--tint);border:1px solid var(--rule)}
+.tag{font-size:.65rem;color:var(--accent);font-weight:500;padding:.3rem .7rem;background:var(--rose-t);border:1px solid #F0DCD9}
 
 /* RECOGNITION TAGS */
 .rh{font-size:.78rem;font-weight:500;color:var(--ink);margin:1.25rem 0 .5rem}
 .rr{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
-.rt{font-size:.72rem;color:var(--mid);padding:.35rem .75rem;border:1px solid var(--rule);background:var(--tint)}
+.rt{font-size:.72rem;color:var(--mid);padding:.35rem .75rem;border:1px solid #E8E0E5;background:var(--ice-t)}
 
 /* WAYS OF WORKING */
 .ways{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:1.5rem 0}
@@ -91,7 +92,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* MATRIX */
 .mx{width:100%;border-collapse:collapse;border:1px solid var(--rule);margin:1.5rem 0;font-size:.72rem}
-.mx th{padding:.5rem;font-size:.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sub);background:var(--tint);border:1px solid var(--rule);text-align:center}
+.mx th{padding:.5rem;font-size:.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sub);background:var(--ice-t);border:1px solid var(--rule);text-align:center}
 .mx th:first-child{text-align:left;min-width:160px}
 .mx td{padding:.5rem;border:1px solid var(--rule);text-align:center;color:var(--mid)}
 .mx td:first-child{text-align:left;font-weight:500;color:var(--ink);font-size:.7rem}
@@ -145,14 +146,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 /* METHOD */
 .mc{border:1px solid var(--rule);margin-bottom:1rem;border-radius:2px}
 .mc-h{padding:1rem 1.25rem;cursor:pointer;position:relative}
-.mc-h:hover{background:var(--tint)}
+.mc-h:hover{background:var(--ice-t)}
 .mc-chevron{position:absolute;right:1.25rem;top:1.1rem;width:16px;height:16px;transition:transform .2s}
 .mc-chevron svg{width:16px;height:16px;fill:none;stroke:var(--sub);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .mc[aria-expanded="true"] .mc-chevron{transform:rotate(180deg)}
 .mc-t{font-size:.85rem;font-weight:500;color:var(--ink);margin-bottom:.35rem;padding-right:2rem}
 .sb{display:inline-grid;grid-template-columns:repeat(3,auto);margin-bottom:.35rem}
 .sc{padding:.2rem .6rem;font-size:.6rem;font-weight:500;text-align:center}
-.sc.e{background:var(--phase1);color:var(--ink)}.sc.x{background:var(--phase2);color:var(--ink)}.sc.l{background:var(--phase3);color:var(--ink)}.sc.off{background:var(--tint);color:var(--sub);opacity:.3}
+.sc.e{background:var(--rose-t);color:var(--ink)}.sc.x{background:var(--ice-t);color:var(--ink)}.sc.l{background:var(--blue-t);color:var(--ink)}.sc.off{background:#F9F7F8;color:var(--sub);opacity:.3}
 .mc-u{font-size:.72rem;color:var(--mid);line-height:1.6}
 .mc-b{display:none;padding:0 1.25rem 1.25rem;border-top:1px solid var(--rule)}
 .mc[aria-expanded="true"] .mc-b{display:block}
@@ -164,7 +165,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* TABLE */
 .pt{width:100%;border-collapse:collapse;border:1px solid var(--rule);margin:1.5rem 0}
-.pt th{padding:.6rem .8rem;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--sub);background:var(--tint);border-bottom:1px solid var(--rule);text-align:left}
+.pt th{padding:.6rem .8rem;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--sub);background:var(--ice-t);border-bottom:1px solid var(--rule);text-align:left}
 .pt td{padding:.75rem .8rem;font-size:.78rem;color:var(--mid);border-bottom:1px solid var(--rule);line-height:1.6}
 .pt td:first-child{font-weight:500;color:var(--ink);white-space:nowrap}
 .pt td:nth-child(2){font-weight:500;color:var(--ink)}
@@ -173,7 +174,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .closing{font-family:var(--serif);font-size:1.05rem;color:var(--mid);font-style:italic;line-height:1.8;max-width:560px}
 
 /* ACQUISITION BADGE */
-.acq{display:inline-flex;align-items:center;gap:.35rem;margin-top:.75rem;padding:.4rem .75rem;background:var(--warm);border:1px solid var(--rule);font-size:.68rem;font-weight:600;color:var(--accent);letter-spacing:.04em}
+.acq{display:inline-flex;align-items:center;gap:.35rem;margin-top:.75rem;padding:.4rem .75rem;background:var(--rose-t);border:1px solid #EACCC9;font-size:.68rem;font-weight:600;color:var(--accent);letter-spacing:.04em}
 .acq::before{content:'★';font-size:.7rem}
 
 /* RESPONSIVE */
@@ -191,8 +192,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .intro p{font-size:.82rem;line-height:1.8}
 
   /* Yin-yang descriptions stack */
-  .yy-desc{flex-direction:column;gap:1rem;padding:0 1rem}
-  .yy-hero svg{width:120px!important;height:120px!important}
+  
+  
 
   /* Metrics: 2-col, last item spans full */
   .met{grid-template-columns:repeat(2,1fr)!important}
@@ -236,7 +237,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .mx,.pt{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border:1px solid var(--rule);position:relative}
   .mx{font-size:.55rem}
   .mx th,.mx td{padding:.3rem .25rem;white-space:nowrap;min-width:55px;font-size:.55rem}
-  .mx th:first-child,.mx td:first-child{min-width:80px;position:sticky;left:0;background:var(--white);z-index:1;border-right:2px solid var(--rule)}
+  .mx th:first-child,.mx td:first-child{min-width:80px;position:sticky;left:0;background:#fff;z-index:1;border-right:2px solid var(--rule)}
   .mx thead th{background:var(--tint);position:sticky;top:0;z-index:2}
   .mx thead th:first-child{z-index:3}
   .pt{font-size:.68rem}
@@ -266,6 +267,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   /* Focus 3-col stacks on mobile */
   #focus div[style*="grid-template-columns"]{grid-template-columns:1fr!important}
 
+  /* How the work happened 2×3 stacks */
+  #appendix div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+
+  /* Venn scales on mobile */
+  #overview svg[viewBox="0 0 440 240"]{width:300px!important;height:165px!important}
+
   /* Full-bleed sections */
   #recognition,#focus{padding:2rem 1rem!important;margin:0 -1rem!important}
 
@@ -279,7 +286,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <body>
 
 <nav class="nav" aria-label="Page sections"><div class="nav-in">
-<a href="#overview">Overview</a><a href="#recognition">Recognition</a><a href="#focus">Focus</a><a href="#methodology">Methodology</a><a href="#practice">Practice</a><a href="#engagements">Engagements</a><a href="#partnerships">Partnerships</a><a href="#contributions">Contributions</a>
+<a href="#overview">Overview</a><a href="#recognition">Recognition</a><a href="#focus">Focus</a><a href="#methodology">Methodology</a><a href="#partnerships">Partnerships</a><a href="#contributions">Contributions</a><a href="#appendix">Appendix</a>
 </div></nav>
 
 <div class="pg">
@@ -289,27 +296,29 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <p class="tl" style="color:var(--accent)">Brand Strategy · Innovation · Creative Direction · Design-Technology</p></header>
 
 <section class="sec">
-<p class="premise">Making the extraordinary relatable — how do we create a visual, tactile, and imaginative experience that will invite a global audience to interact with this product?</p>
+<p class="premise" style="text-align:center;max-width:640px;margin-left:auto;margin-right:auto"><strong>Making the Extraordinary Relatable.</strong> How do we create a visual, tactile, and imaginative experience that will invite a global audience to interact with&nbsp;this&nbsp;product?</p>
 
-<!-- YIN-YANG HERO -->
-<div class="yy-hero" style="text-align:center;margin:2rem 0 1rem">
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:160px;height:160px">
-<circle cx="100" cy="100" r="98" fill="#B5706A"/>
-<path d="M100,2 A98,98 0 0,1 100,198 A49,49 0 0,1 100,100 A49,49 0 0,0 100,2" fill="#D0C0CC"/>
-<circle cx="100" cy="51" r="15" fill="#B5706A"/>
-<circle cx="100" cy="149" r="15" fill="#D0C0CC"/>
-<text x="100" y="56" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">Physical</text>
-<text x="100" y="154" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">Digital</text>
+<!-- VENN DIAGRAM -->
+<div style="text-align:center;margin:2.5rem 0 1rem">
+<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" style="width:400px;height:220px">
+<circle cx="150" cy="120" r="95" fill="#B5706A" opacity=".06" stroke="#B5706A" stroke-width="1.5"/>
+<circle cx="290" cy="120" r="95" fill="#4F84A6" opacity=".06" stroke="#4F84A6" stroke-width="1.5"/>
+<text x="100" y="117" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="13" font-weight="500" fill="#B5706A">Physical</text>
+<text x="100" y="133" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="10" fill="#B5706A" opacity=".7">Experience</text>
+<text x="340" y="117" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="13" font-weight="500" fill="#4F84A6">Digital</text>
+<text x="340" y="133" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="10" fill="#4F84A6" opacity=".7">Experience</text>
+<text x="220" y="117" text-anchor="middle" font-family="Outfit,system-ui,sans-serif" font-size="12" font-weight="600" fill="#2A4A45">Interdisciplinary</text>
 </svg>
 </div>
-<div class="yy-desc" style="display:flex;justify-content:center;gap:3rem;margin:0 0 2rem;max-width:620px;margin-left:auto;margin-right:auto">
-<div style="font-size:.78rem;color:var(--mid);line-height:1.6;text-align:center"><strong style="color:var(--ink);font-weight:600;display:block;margin-bottom:.1rem">Physical</strong>Spatial design, retail environments, brand systems, packaging, product graphics, strategic imagery, production</div>
-<div style="font-size:.78rem;color:var(--mid);line-height:1.6;text-align:center"><strong style="color:var(--ink);font-weight:600;display:block;margin-bottom:.1rem">Digital</strong>Websites, interfaces, information architecture, interactive programming, digital strategy</div>
+<div style="display:flex;justify-content:center;gap:1.5rem;margin:0 0 2rem;max-width:720px;margin-left:auto;margin-right:auto;flex-wrap:wrap">
+<div style="flex:1;min-width:180px;font-size:.75rem;color:var(--mid);line-height:1.65;text-align:center"><strong style="color:#B5706A;font-weight:600;display:block;margin-bottom:.2rem">Physical Experience</strong>Retail environments, brand activations, packaging, product graphics, strategic imagery, and production.</div>
+<div style="flex:1;min-width:180px;font-size:.75rem;color:var(--mid);line-height:1.65;text-align:center"><strong style="color:var(--ink);font-weight:600;display:block;margin-bottom:.2rem">Interdisciplinary</strong>Brand strategy, integrated identity systems, creative direction, and messaging.</div>
+<div style="flex:1;min-width:180px;font-size:.75rem;color:var(--mid);line-height:1.65;text-align:center"><strong style="color:#4F84A6;font-weight:600;display:block;margin-bottom:.2rem">Digital Experience</strong>Websites, interfaces, content strategy, interaction design, and digital systems.</div>
 </div>
 
 <div class="intro">
-<p>Founded and led a five-person strategic design practice in New York over fifteen years. Directed brand strategy, creative, and production across beauty, luxury fragrance, confectionery, housewares, toys, and retail — from concept through execution.</p>
-<p>Partnered directly with Fortune 500 companies, founder-led brands, and startups — including L'Oréal across three divisions, Hasbro across three successive programs, and Godiva across eight years of seasonal collections. Approved supplier to L'Oréal and Johnson &amp; Johnson. Multi-year relationships with senior decision-makers produced brand systems, original intellectual property, and consumer experiences that moved to market — and in two cases, contributed to the conditions for acquisition.</p>
+<p>Founded and led a five-person strategic design practice in New York over fifteen years. Directed brand strategy, creative, and production across beauty, luxury fragrance, confectionery, housewares, toys, and retail, from concept through execution.</p>
+<p>Partnered directly with Fortune 500 companies, founder-led brands, and startups, including L'Oréal across three divisions, Hasbro across three successive programs, and Godiva across eight years of seasonal collections. Approved supplier to L'Oréal and Johnson &amp; Johnson. Multi-year relationships with senior decision-makers produced brand systems, original intellectual property, and consumer experiences that moved to market. In two cases, contributed to the conditions for acquisition.</p>
 </div>
 
 <div class="met"><div class="m"><span class="m-n">15-year</span><span class="m-d">Strategic design<br>practice</span></div><div class="m"><span class="m-n">40+</span><span class="m-d">Brand initiatives<br>directed</span></div><div class="m"><span class="m-n">2</span><span class="m-d">Client brands acquired<br>post-engagement</span></div><div class="m"><span class="m-n">2</span><span class="m-d">Approved supplier<br>L'Oréal · Johnson &amp; Johnson</span></div></div>
@@ -326,7 +335,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<p class="cd-txt">Developed packaging, brand expression, and strategic imaging across SoftSheen-Carson, Maybelline/Garnier, and Kids World — three divisions within the L'Oréal Multicultural Beauty portfolio, each engaging the practice independently. Concepts and directions were used in leadership presentations to evaluate strategic direction.</p>
+<p class="cd-txt">Developed packaging, brand expression, and strategic imaging across SoftSheen-Carson, Maybelline/Garnier, and Kids World. Three divisions within the L'Oréal Multicultural Beauty portfolio, each engaging the practice independently. Concepts and directions were used in leadership presentations to evaluate strategic direction.</p>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -347,7 +356,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<p class="cd-txt">Created packaging and original hand-drawn artwork for Godiva's seasonal gift collections across an eight-year partnership — holiday, Valentine's Day, and cultural collections including Diwali. Collections designed for Valentine's Day, Mother's Day, holiday, and cultural celebrations including the Hindu festival Diwali.</p>
+<p class="cd-txt">Created packaging and original hand-drawn artwork for Godiva's seasonal gift collections across an eight-year partnership.</p>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -357,7 +366,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<p class="cd-txt">Developed an original artist collection for the product line — surface patterns, packaging, large-format product graphics, and a collection extension across cleaning tools. The collection replaced previously licensed Keith Haring graphics, giving the brand original intellectual property it owned outright. Designed and built the brand's website.</p>
+<p class="cd-txt">Developed an original artist collection for the product line. Surface patterns, packaging, large-format product graphics, and a collection extension across cleaning tools. The collection replaced previously licensed Keith Haring graphics, giving the brand original intellectual property it owned outright. Designed and built the brand's website.</p>
 <p class="cd-txt">Featured in Graphic Design USA and Home Furnishing News. Worldwide retail rollout. <strong>Highest revenue in five years.</strong></p>
 <div class="acq">Acquired by Bradshaw International</div>
 </div></div>
@@ -369,7 +378,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<p class="cd-txt">Designed modular retail environments for Playskool, <strong>shown at the Hong Kong International Toy Fair and adopted for nationwide deployment</strong>. The scope expanded across three successive engagements — Tonka, Playskool, then a combined Vehicles Merchandising program integrating Tonka, Transformers, and Star Wars into one retail aisle across three progressive waves.</p>
+<p class="cd-txt">Designed modular retail environments for Playskool, <strong>shown at the Hong Kong International Toy Fair and adopted for nationwide deployment</strong>. The scope expanded across three successive engagements: Tonka, Playskool, then a combined Vehicles Merchandising program integrating Tonka, Transformers, and Star Wars into one retail aisle across three progressive waves.</p>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -379,7 +388,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<p class="cd-txt">Designed a self-service digital beauty experience combining on-screen interface, content architecture, and in-store kiosk for four prestige beauty brands — American Beauty, Flirt, Good Skin, and Grassroots — each with its own visual identity within a shared navigational system. <strong>Deployed at the Short Hills, New Jersey flagship.</strong></p>
+<p class="cd-txt">Designed a self-service digital beauty experience combining on-screen interface, content architecture, and in-store kiosk for four prestige beauty brands: American Beauty, Flirt, Good Skin, and Grassroots. Each with its own visual identity within a shared navigational system. Deployed at the Short Hills, New Jersey flagship.</p>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -404,11 +413,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 
 <!-- RECOGNITION — right after Impact -->
-<section class="sec" id="recognition" style="background:var(--warm);margin:0 -2rem;padding:3rem 2rem">
+<section class="sec" id="recognition" style="background:#FDF9F8;margin:0 -2rem;padding:3rem 2rem">
 <div class="ey"><div class="ey-bar"></div><span>Recognition</span></div>
 
 <div class="rh">Awards</div>
-<div class="rr"><span class="rt">3× Best New Premium Fragrance, Pure Beauty Global Awards — L'arganique Beauté (luxury fragrance)</span></div>
+<div class="rr"><span class="rt">3× Best New Premium Fragrance, Pure Beauty Global Awards, L'arganique Beauté (luxury fragrance)</span></div>
 
 <div class="rh">Press + client commentary</div>
 <div class="cd" aria-expanded="false" role="region" style="margin-top:.5rem">
@@ -418,9 +427,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<div class="ctx-warm ctx" style="margin:0 0 1rem"><p>"The new pattern is perfect for Casabella: it's very strategic and reinforces our heritage of being a trend setter in the industry for colors, patterns and product design. It also makes everyone smile when they see it, and that is exactly what you would expect from Casabella."</p><p class="cite">— Director of Marketing, Casabella</p></div>
+<div class="ctx-warm ctx" style="margin:0 0 1rem"><p>"The new pattern is perfect for Casabella: it's very strategic and reinforces our heritage of being a trend setter in the industry for colors, patterns and product design. It also makes everyone smile when they see it, and that is exactly what you would expect from Casabella."</p><p class="cite">— Casabella</p></div>
 <p class="cd-txt">The creative director and team selected a striped pattern "for its movement and style" and dubbed it "The Artist Collection."</p>
-<div class="ctx-warm ctx" style="margin:1rem 0 0"><p>"Saturated, high-spectrum/HD colors will appeal to millennials as well as other demographic groups. While these patterns are a big trend in beauty packaging, Casabella was smart to capitalize on this for their niche."</p><p class="cite">— Jeannie Joshi, Graphic Design USA</p></div>
+<div class="ctx-warm ctx" style="margin:1rem 0 0"><p>"Saturated, high-spectrum/HD colors will appeal to millennials as well as other demographic groups. While these patterns are a big trend in beauty packaging, Casabella was smart to capitalize on this for their niche."</p><p class="cite">— Graphic Design USA</p></div>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region" style="margin-top:.5rem">
@@ -439,25 +448,25 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 
 <!-- FOCUS -->
-<section class="sec" id="focus" style="background:var(--warm);margin:0 -2rem;padding:3rem 2rem">
+<section class="sec" id="focus" style="margin:0 -2rem;padding:3rem 2rem">
 <div class="ey"><div class="ey-bar"></div><span>Focus</span></div>
 
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);margin-top:1.25rem">
-<div style="background:var(--white);padding:1.5rem;border-top:3px solid #B5706A">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#E8E0E5;margin-top:1.25rem">
+<div style="background:#FBF3F2;padding:1.5rem;border-top:3px solid #DDBDBA">
 <div style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:#B5706A;margin-bottom:.6rem">Beauty</div>
 <p style="font-size:.78rem;color:var(--mid);line-height:1.8;margin:0">Daring expressions of color, with meticulous attention to image-making, developed for fashion, fragrance, cosmetics, body care, and consumer brands. The work was designed to attract the eye and suggest joy, serenity, and escape.</p>
 </div>
-<div style="background:var(--white);padding:1.5rem;border-top:3px solid #D0C0CC">
-<div style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:#B5706A;margin-bottom:.6rem">Corporate</div>
+<div style="background:#F8FAFA;padding:1.5rem;border-top:3px solid #C9D5D4">
+<div style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:#2A4A45;margin-bottom:.6rem">Corporate</div>
 <p style="font-size:.78rem;color:var(--mid);line-height:1.8;margin:0">Information translated for clarity and visual impact. Annual reports, brochures, websites, and public relations materials were designed to make facts easier to locate, understand, and use.</p>
 </div>
-<div style="background:var(--white);padding:1.5rem;border-top:3px solid #B5706A">
-<div style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:#B5706A;margin-bottom:.6rem">Kids</div>
+<div style="background:#F3F7FA;padding:1.5rem;border-top:3px solid #BDD0DB">
+<div style="font-family:var(--serif);font-size:1.1rem;font-weight:700;color:#4F84A6;margin-bottom:.6rem">Kids</div>
 <p style="font-size:.78rem;color:var(--mid);line-height:1.8;margin:0">Learning environments designed as complete experiences. In classrooms, museums, retail, and product design, the work was shaped to capture attention, engage imagination, and support discovery.</p>
 </div>
 </div>
 
-<p class="sdesc" style="margin-top:1.5rem">Case studies with imagery — forthcoming.</p>
+<p class="sdesc" style="margin-top:1.5rem">Case studies with imagery. Forthcoming.</p>
 </section>
 
 
@@ -468,12 +477,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <div class="ax-w"><div class="ax-d"><span class="axlb t">audience</span><div class="axl axv t"></div><div class="ax-ctr"><div class="ax-inn"></div></div><div class="axl axh"></div><span class="axlb r">context</span><div class="axl axv b"></div><span class="axlb b">intent</span></div></div>
 
 <div class="tri" style="margin-top:1.5rem">
-<div class="tri-c"><div class="tri-t">Designing the design</div><div class="tri-s">Craft execution</div></div>
-<div class="tri-c"><div class="tri-t">Designing the brief</div><div class="tri-s">Service or experience design</div></div>
-<div class="tri-c"><div class="tri-t">Designing the future</div><div class="tri-s">Emergent trends and behaviors</div></div>
+<div class="tri-c"><div class="tri-t">Designing the design</div><div class="tri-s">Craft Execution</div></div>
+<div class="tri-c"><div class="tri-t">Designing the brief</div><div class="tri-s">Service or Experience Design</div></div>
+<div class="tri-c"><div class="tri-t">Designing the future</div><div class="tri-s">Emergent Trends &amp; Behaviors</div></div>
 </div>
 
-<p class="sdesc" style="margin-top:2rem">Designing for complexity — problem framing, vision building, exploration.</p>
+<p class="sdesc" style="margin-top:2rem">Designing for complexity: problem framing, vision building, exploration.</p>
 
 <div class="tri" style="margin-top:1rem">
 <div class="tri-c" style="padding:1.25rem">
@@ -482,7 +491,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 </div>
 <div class="tri-c" style="padding:1.25rem">
 <div class="tri-t" style="text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;margin-bottom:.75rem">Build the vision</div>
-<p style="font-size:.78rem;color:var(--mid);line-height:1.8;margin:0">Storytelling.<br><em>The future we want — how might we get there?</em></p>
+<p style="font-size:.78rem;color:var(--mid);line-height:1.8;margin:0">Storytelling.<br><em>The future we want. How might we get there?</em></p>
 </div>
 <div class="tri-c" style="padding:1.25rem">
 <div class="tri-t" style="text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;margin-bottom:.75rem">Discovery + exploration</div>
@@ -495,63 +504,22 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 <div class="scroll-wrap scroll-fade" style="overflow-x:auto;margin-top:1rem">
 <table class="mx">
-<thead><tr><th></th><th>Envision (strategy)</th><th>Experience (design)</th><th>Launch (realization)</th></tr></thead>
+<thead><tr><th>Case</th><th>Envision (strategy)</th><th>Experience (creative)</th><th>Delivery (realization)</th></tr></thead>
 <tbody>
-<tr><td>Customer + market</td><td>Identify segments and needs</td><td>Test with real audiences</td><td>Refine based on market data</td></tr>
-<tr><td>Technology + behavior</td><td>Scan for opportunities; define how people discover, try, and buy</td><td>Select platform and prototype</td><td>Build and deploy</td></tr>
-<tr><td>Brand + story</td><td>Define the promise and the role the brand needs to play</td><td>Design the visual system across packaging, retail, and digital</td><td>Produce assets and guidelines</td></tr>
-<tr><td>Competition + positioning</td><td>Map the landscape and decide where to stand</td><td>Differentiate visually</td><td>Position at retail and in market</td></tr>
-<tr><td>Operations + architecture</td><td>Scope what needs to be in place to deliver</td><td>Validate with vendors</td><td>Hand off to client teams</td></tr>
+<tr><td>Customer + market</td><td>Who are they and what do they need?</td><td>Design for how they see, shop, and choose</td><td>Approved direction for market</td></tr>
+<tr><td>Technology + behavior</td><td>How do people discover, try, and buy?</td><td>Choose the right format and medium. Prototype to prove it works</td><td>Specifications and partner coordination for the build</td></tr>
+<tr><td>Brand + story</td><td>What should this brand promise and what role does it play?</td><td>Design the brand system and campaign across multichannel including packaging, retail, digital, and communications</td><td>Finished assets and guidelines</td></tr>
+<tr><td>Competition + positioning</td><td>Who else is here and where do we stand?</td><td>Own territory the competition doesn't</td><td>Shelf-ready and distinct</td></tr>
+<tr><td>Operations + architecture</td><td>What needs to be in place to make this work?</td><td>Verify the design can be manufactured at scale</td><td>Hand off to the client's team</td></tr>
+<tr style="border-top:2px solid var(--rule)"><td style="font-weight:600">Outcome</td><td style="font-weight:600;color:var(--accent)">Understand</td><td style="font-weight:600;color:var(--accent)">Adapt</td><td style="font-weight:600;color:var(--accent)">Appropriate</td></tr>
 </tbody>
-<tfoot><tr><td colspan="4" style="background:var(--phase3);color:var(--ink);text-align:center;font-weight:500;font-size:.7rem;letter-spacing:.06em">Project management runs continuously across all three phases</td></tr></tfoot>
+<tfoot><tr><td colspan="4" style="background:var(--phase3);color:var(--ink);text-align:center;font-weight:500;font-size:.7rem;letter-spacing:.06em">Project management runs continuously across all phases</td></tr></tfoot>
 </table>
 </div>
 </section>
 
 
-<!-- PRACTICE — ways of working + depth matrix -->
-<section class="sec" id="practice">
-<div class="ey"><div class="ey-bar"></div><span>How the work happened</span></div>
-<div class="ways">
-<div class="way"><div class="way-n">1</div><div class="way-txt">The client's business strategy is where we start</div></div>
-<div class="way"><div class="way-n">2</div><div class="way-txt">Committed to the brand in an anthropological sense — becoming participant-observers</div></div>
-<div class="way"><div class="way-n">3</div><div class="way-txt">The discovery process of learning a client's needs, calling on talented consultants when needed</div></div>
-<div class="way"><div class="way-n">4</div><div class="way-txt">Harmonizing the analytic and creative</div></div>
-<div class="way"><div class="way-n">5</div><div class="way-txt">Translating the product's promise into a visual campaign that connects faster and more deeply than words alone</div></div>
-<div class="way"><div class="way-n">6</div><div class="way-txt">Creating an elegant solution that speaks to the intended consumer in all dimensions</div></div>
-</div>
 
-<div class="ey" style="margin-top:2.5rem"><div class="ey-bar"></div><span>Depth of engagement by client</span></div>
-<div class="scroll-wrap scroll-fade" style="overflow-x:auto">
-<table class="mx"><thead><tr><th></th><th>L'Oréal</th><th>L'arganique</th><th>Casabella</th><th>Hasbro</th><th>Godiva</th><th>J&amp;J</th><th>Kohl's</th><th>Pepperidge Farm</th></tr></thead><tbody>
-<tr><td>Positioning + market framing</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td></tr>
-<tr><td>Concept + pipeline work</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td></tr>
-<tr><td>Brand systems + packaging</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td></tr>
-<tr><td>Strategic imagery</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td></td><td></td><td></td></tr>
-<tr><td>Consumer experience</td><td></td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td></td><td class="dot">●</td><td></td></tr>
-<tr><td>Final delivery</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td></tr>
-</tbody></table>
-</div>
-</section>
-
-
-<!-- ENGAGEMENTS -->
-<section class="sec" id="engagements">
-<div class="ey"><div class="ey-bar"></div><span>Engagements</span></div>
-<p class="sdesc">Selected programs by category and outcome.</p>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Mass-market hair care — packaging from equity study</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc off">—</div></div><div class="mc-u">Portfolio of options across four levels of strategic ambition.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Client had completed an equity study. The brief was to translate those findings into packaging directions.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Six packaging concepts across four levels of ambition, from subtle updates to a full rebrand.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Each direction tested for scalability across the full product range.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">All directions presented at the global leadership meeting for evaluation.</div></div></div></div></div>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Four prestige beauty brands — in-store experience</div><div class="sb"><div class="sc off">—</div><div class="sc x">Design</div><div class="sc l">Realize</div></div><div class="mc-u">Digital strategy, information architecture, and user interface design for in-store touchscreen experience.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Four brands needed individual identity within a shared digital system.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Developed two concepts: one extending the existing wireframes, one proposing an alternate creative direction.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Four brand experiences sharing one navigation system, each visually distinct.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Designed all screen templates and programmed the attractor loop in-house — design and development from the same team.</div></div></div></div></div>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Children's toy brand — modular retail environment</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc l">Realize</div></div><div class="mc-u">Designed a modular retail environment and worked with fabrication partners to ensure the installed system matched the design intent.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Interactive retail environment. Third successive engagement.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Progressed from pencil sketches through full-color 3D renderings.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Modular system designed for fabrication by the client's vendors. Scalable to nationwide deployment.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Provided engineer blueprints for production and execution.</div></div></div></div></div>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Three global toy franchises — retail aisle</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc l">Realize</div></div><div class="mc-u">Three brands, one aisle. Incremental to transformational in three waves.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Three brand properties integrated into one merchandising system.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Three waves: improved → dimensional → interactive electronics.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Three ambition levels, each building on the previous.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Developed from concept sketches to 3D renderings on a five-day compressed schedule.</div></div></div></div></div>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Prestige nail care brand — full-line brand redesign</div><div class="sb"><div class="sc e">Discovery</div><div class="sc off">—</div><div class="sc off">—</div></div><div class="mc-u">Paid scoping engagement to define a roadmap for a future full-line redesign.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Identified fragmented packaging, no unified visual strategy, and inconsistent retail presence across the line.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Conducted competitive research and developed three mood-board directions, using the logo as the unifying visual anchor.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Mapped the product assortment as a single brand system so leadership could see how a redesign would work across the line before committing.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Roadmap</div><div class="mgc-d">Delivered a ten-page roadmap outlining manufacturer considerations, example 3D prototypes, and a high-level brand guidelines and communications outline as inputs for the eventual redesign.</div></div></div></div></div>
-
-<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Private-label beauty + bath — full brand and packaging program</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc off">—</div></div><div class="mc-u">New organic brand identity and packaging system for a national retail presentation.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">New organic and natural product line needed a complete visual identity on a compressed timeline.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Visual narrative, brand logo concepts, and design exploration across five product categories.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">One design system scaled across 65–80 SKUs spanning facial, bath and body, fragrance, soap, and home — with secondary packaging and structural direction.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Recommended reducing scope to strengthen concept quality. Delivered final renderings across the full product range.</div></div></div></div></div>
-</section>
 
 
 <!-- PARTNERSHIPS -->
@@ -581,7 +549,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<div class="rr"><span class="rt">Keynote · Health Beauty Association Global</span><span class="rt">Keynote · Cosmetic Industry Buyers &amp; Suppliers</span><span class="rt">Presenter · Luxe Pack New York</span><span class="rt">Panel · MD&amp;M East — Collaborative Robots</span><span class="rt">Panel · ESC Boston — Smart Manufacturing</span><span class="rt">Panel · Packaging Digest</span></div>
+<div class="rr"><span class="rt">Keynote · Health Beauty Association Global</span><span class="rt">Keynote · Cosmetic Industry Buyers &amp; Suppliers</span><span class="rt">Presenter · Luxe Pack New York</span><span class="rt">Panel · MD&amp;M East, Collaborative Robots</span><span class="rt">Panel · ESC Boston, Smart Manufacturing</span><span class="rt">Panel · Packaging Digest</span></div>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -591,7 +559,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<div class="rr"><span class="rt">BeautyMatter NEXT Awards — Jury</span><span class="rt">The Dieline Awards — Jury</span><span class="rt">INNOCOS — Advisory, Brand Innovation</span></div>
+<div class="rr"><span class="rt">BeautyMatter NEXT Awards, Jury</span><span class="rt">The Dieline Awards, Jury</span><span class="rt">INNOCOS, Advisory, Brand Innovation</span></div>
 </div></div>
 
 <div class="cd" aria-expanded="false" role="region">
@@ -611,14 +579,62 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 <span class="cd-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></span>
 </div>
 <div class="cd-b">
-<div class="rr"><span class="rt">Global Cosmetic Industry — "Transcendent Beauty"</span><span class="rt">Beauty Packaging — "Luxury Newly Defined"</span><span class="rt">Beauty Packaging — "Setting Forth New Aesthetics"</span><span class="rt">Beauty Packaging — "Borderless Design"</span><span class="rt">Beauty Packaging — "Out of the Box Designs"</span><span class="rt">BeautyMatter — "Untitled, Unbranded, Unfinished, Unfiltered"</span><span class="rt">BeautyMatter — "Idea Therapy: New Magic Words"</span><span class="rt">BeautyMatter — "From Luxe Niche to Personal Care"</span></div>
+<div class="rr"><span class="rt">Global Cosmetic Industry, "Transcendent Beauty"</span><span class="rt">Beauty Packaging, "Luxury Newly Defined"</span><span class="rt">Beauty Packaging, "Setting Forth New Aesthetics"</span><span class="rt">Beauty Packaging, "Borderless Design"</span><span class="rt">Beauty Packaging, "Out of the Box Designs"</span><span class="rt">BeautyMatter, "Untitled, Unbranded, Unfinished, Unfiltered"</span><span class="rt">BeautyMatter, "Idea Therapy: New Magic Words"</span><span class="rt">BeautyMatter, "From Luxe Niche to Personal Care"</span></div>
 </div></div>
 </section>
 
 
+<!-- APPENDIX -->
+<section class="sec" id="appendix" style="border-top:2px solid var(--rule)">
+<div style="text-align:center;margin-bottom:2rem"><span style="font-family:var(--serif);font-size:1.4rem;color:var(--ink);font-weight:400;letter-spacing:.04em">Appendix</span></div>
+
+<!-- ENGAGEMENTS (appendix) -->
+
+<div class="ey"><div class="ey-bar"></div><span>Engagements</span></div>
+<p class="sdesc">Selected programs by category and outcome.</p>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Mass-market hair care: packaging from equity study</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc off">—</div></div><div class="mc-u">Portfolio of options across four levels of strategic ambition.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Client had completed an equity study. The brief was to translate those findings into packaging directions.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Six packaging concepts across four levels of ambition, from subtle updates to a full rebrand.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Each direction tested for scalability across the full product range.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">All directions presented at the global leadership meeting for evaluation.</div></div></div></div></div>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Four prestige beauty brands: in-store experience</div><div class="sb"><div class="sc off">—</div><div class="sc x">Design</div><div class="sc l">Deliver</div></div><div class="mc-u">Digital strategy, information architecture, and user interface design for in-store touchscreen experience.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Four brands needed individual identity within a shared digital system.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Developed two concepts: one extending the existing wireframes, one proposing an alternate creative direction.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Four brand experiences sharing one navigation system, each visually distinct.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Designed all screen templates and programmed the attractor loop in-house. Design and development from the same team.</div></div></div></div></div>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Children's toy brand: modular retail environment</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc l">Deliver</div></div><div class="mc-u">Designed a modular retail environment and worked with fabrication partners to ensure the installed system matched the design intent.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Interactive retail environment. Third successive engagement.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Progressed from pencil sketches through full-color 3D renderings.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Modular system designed for fabrication by the client's vendors. Scalable to nationwide deployment.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Provided engineer blueprints for production and execution.</div></div></div></div></div>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Three global toy franchises: retail aisle</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc l">Deliver</div></div><div class="mc-u">Three brands, one aisle. Incremental to transformational in three waves.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Three brand properties integrated into one merchandising system.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Three waves: improved → dimensional → interactive electronics.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Three ambition levels, each building on the previous.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Developed from concept sketches to 3D renderings on a five-day compressed schedule.</div></div></div></div></div>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Prestige nail care brand: full-line brand redesign</div><div class="sb"><div class="sc e">Discovery</div><div class="sc off">—</div><div class="sc off">—</div></div><div class="mc-u">Paid scoping engagement to define a roadmap for a future full-line redesign.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">Identified fragmented packaging, no unified visual strategy, and inconsistent retail presence across the line.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Conducted competitive research and developed three mood-board directions, using the logo as the unifying visual anchor.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">Mapped the product assortment as a single brand system so leadership could see how a redesign would work across the line before committing.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Roadmap</div><div class="mgc-d">Delivered a ten-page roadmap outlining manufacturer considerations, example 3D prototypes, and a high-level brand guidelines and communications outline as inputs for the eventual redesign.</div></div></div></div></div>
+
+<div class="mc" aria-expanded="false" role="region"><div class="mc-h" tabindex="0" onclick="toggleMC(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMC(this)}"><div class="mc-t">Private-label beauty + bath: full brand and packaging program</div><div class="sb"><div class="sc e">Discovery</div><div class="sc x">Design</div><div class="sc off">—</div></div><div class="mc-u">New organic brand identity and packaging system for a national retail presentation.</div><span class="mc-chevron"><svg viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="mc-b"><div class="mg"><div class="mgc"><div class="mgc-q">What?</div><div class="mgc-l">Problem framing</div><div class="mgc-d">New organic and natural product line needed a complete visual identity on a compressed timeline.</div></div><div class="mgc"><div class="mgc-q">Where?</div><div class="mgc-l">Vision building</div><div class="mgc-d">Visual narrative, brand logo concepts, and design exploration across five product categories.</div></div><div class="mgc"><div class="mgc-q">What if?</div><div class="mgc-l">Systems thinking</div><div class="mgc-d">One design system scaled across 65–80 SKUs spanning facial, bath and body, fragrance, soap, and home, with secondary packaging and structural direction.</div></div><div class="mgc"><div class="mgc-q">How?</div><div class="mgc-l">Research + discovery</div><div class="mgc-d">Recommended reducing scope to strengthen concept quality. Delivered final renderings across the full product range.</div></div></div></div></div>
+
+<!-- PRACTICE (appendix) -->
+
+<div class="ey" style="margin-top:2.5rem"><div class="ey-bar"></div><span>How the work happened</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#E8E0E5;border:1px solid #E8E0E5;margin:1.25rem 0">
+<div style="background:#FDF8F7;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">The client's business strategy is where we start</p></div>
+<div style="background:#F7F9FB;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">Harmonizing the analytic and creative</p></div>
+<div style="background:#F9F7F8;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">Committed to the brand in an anthropological sense, becoming participant-observers</p></div>
+<div style="background:#FDF8F7;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">Translating the product's promise into a visual campaign that connects faster and more deeply than words alone</p></div>
+<div style="background:#F9F7F8;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">The discovery process of learning a client's needs, calling on talented consultants when needed</p></div>
+<div style="background:#F7F9FB;padding:1.25rem"><p style="font-size:.78rem;color:var(--ink);line-height:1.7;margin:0">Creating an elegant solution that speaks to the intended consumer in all dimensions</p></div>
 </div>
 
-<footer style="border-top:1px solid var(--rule);padding:2rem;text-align:center;margin-top:2rem">
+<div class="ey" style="margin-top:2.5rem"><div class="ey-bar"></div><span>Depth of engagement by client</span></div>
+<div class="scroll-wrap scroll-fade" style="overflow-x:auto">
+<table class="mx"><thead><tr><th></th><th>L'Oréal</th><th>L'arganique</th><th>Casabella</th><th>Hasbro</th><th>Godiva</th><th>J&amp;J</th><th>Kohl's</th><th>Pepperidge Farm</th></tr></thead><tbody>
+<tr><td>Positioning + market framing</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td></tr>
+<tr><td>Concept + pipeline work</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td></tr>
+<tr><td>Brand systems + packaging</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td></tr>
+<tr><td>Strategic imagery</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td class="dot">●</td><td></td><td></td><td></td></tr>
+<tr><td>Consumer experience</td><td></td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td></td><td></td><td class="dot">●</td><td></td></tr>
+<tr><td>Final delivery</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td><td class="dot">●</td></tr>
+</tbody></table>
+</div>
+
+
+</section>
+
+</div>
+
+<footer style="border-top:1px solid var(--rule);padding:2rem;text-align:center;margin-top:0;max-width:860px;margin-left:auto;margin-right:auto">
 <div style="font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem">Jeannie Joshi</div>
 <div style="font-size:.75rem;color:var(--mid);line-height:2">
 <a href="tel:9173061142" style="color:var(--mid);text-decoration:none">917-306-1142</a> · <a href="mailto:jjoshi@joshidesign.com" style="color:var(--mid);text-decoration:none">jjoshi@joshidesign.com</a>
